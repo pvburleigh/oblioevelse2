@@ -10,7 +10,7 @@ export default function addEducation(education){
             let university = false;
             await firebase
                 .database()
-                .ref(`/Universities/universityId`)
+                .ref(`/Universities`)
                 .child(education.universityId)
                 .on('value', snapshot => {
                     university = snapshot.val()

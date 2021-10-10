@@ -17,7 +17,6 @@ export default function PostsList ({route,navigation}){
                 });
         }
     },[]);
-    console.log(route.params.education)
     const addForm = <PostsAddForm educationId={route.params.education[0]}/>
 
     if(!posts){
